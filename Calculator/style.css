@@ -1,0 +1,65 @@
+.btns{
+    height:50px;
+    width:50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(254, 238, 204);
+}
+.btn4{
+    height:50px;
+    width:220px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(218, 250, 39);
+}
+.btns:hover{
+    background-color: rgb(246, 204, 113);
+}
+.btn4:hover{
+    background-color: rgb(211, 227, 115);
+}
+.btn2:hover{
+    background-color: rgb(0, 180, 96);
+}
+.btn3:hover{
+    background-color: rgb(247, 70, 167);
+}
+.btn2{
+    height:50px;
+    width:50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(123, 249, 190);
+    border-color: rgb(210, 97, 251);
+}
+.btn3{
+    height:50px;
+    width:50px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(249, 123, 192);
+    border-color: rgb(69, 249, 138);
+}
+.input{
+    height:80px;
+    width:210px;
+    background-color: rgb(188, 231, 245);
+    border-color: rgb(43, 197, 249);
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+}
+.body{
+    background-color: rgb(123, 184, 252);
+    height: 580px;
+    width: 300px;
+    border-color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 7%;
+}
+h1{
+    color: aliceblue;
+}

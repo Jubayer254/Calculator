@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <center>
+        <div class="align-items-center">
+            <div class="body">
+            <h1 id="one">Calculator</h1>
+                <input class="input" type="text" id="in"><br><br>
+                <input class="btns" type="button" id="" onclick="num('c')" value="C">
+                <input class="btns" type="button" id="" onclick="num('b')" value="<-">
+                <input class="btns" type="button" id="" onclick="num('(')" value="(">
+                <input class="btns" type="button" id="" onclick="num( ')' )" value=")"><br><br>
+                <input class="btns" type="button" id="" onclick="num('1')" value="1">
+                <input class="btns" type="button" id="" onclick="num('2')" value="2">
+                <input class="btns" type="button" id=" " onclick="num('3')" value="3">
+                <input class="btn2" type="button" id=" " onclick="num('+')" value="+"><br><br>
+                <input class="btns" type="button" id=" " onclick="num('4')" value="4">
+                <input class="btns" type="button" id=" " onclick="num('5')" value="5">
+                <input class="btns" type="button" id=" " onclick="num('6')" value="6">
+                <input class="btn2" type="button" id=" " onclick="num('-')" value="-"><br><br>
+                <input class="btns" type="button" id=" " onclick="num('7')" value="7">
+                <input class="btns" type="button" id=" " onclick="num('8')" value="8">
+                <input class="btns" type="button" id=" " onclick="num('9')" value="9">
+                <input class="btn2" type="button" id=" " onclick="num('*')" value="*"><br><br>
+                <input class="btns" type="button" id=" " onclick="num('.')" value=".">
+                <input class="btns" type="button" id=" " onclick="num('0')" value="0">
+                <input class="btn3" type="button" id=" " onclick="num('=')" value="=">
+                <input class="btn2" type="button" id=" " onclick="num('/')" value="/"><br><br>
+            </div>
+        </div>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script lang="javascript">
+    var prev="";
+    var result="";
+    var audio = new Audio("1.wav");
+    function num(a){
+        audio.play();
+        if(a=='c'){          
+          
+            document.getElementById("in").value='';
+            prev="";
+        }
+        else if(a=='b'){
+            
+            var len = result.length;
+            result = result.substring(0,len-1);
+            document.getElementById("in").value=result;
+            prev = result;
+        }
+        else if(a=='='){
+           
+            result = eval(result);
+            document.getElementById("in").value=result;
+            prev = result;
+        }      
+        else{
+         
+            result = prev+a;
+            document.getElementById("in").value=result;
+            prev = result;
+        }
+    }
+</script>
