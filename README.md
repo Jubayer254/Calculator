@@ -15,3 +15,4 @@ Programing Languages: HTML, CSS, JavaScript
 * Can calculate all the basic opearations
 * All the buttons have clicking sound
 ## Compatibility 
+All devices including `PC`, `Laptop`, `Smartphone`, `Tablet`
